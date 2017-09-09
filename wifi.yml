@@ -1,3 +1,10 @@
 - hosts: all
+  vars_prompt:
+    - name: "wifi_name"
+      prompt: "what is the wifi name (ssid)?"
+      private: no
+    - name: "wifi_password"
+      prompt: "what is the wifi password?"
+      private: yes
   roles:
     - wifi

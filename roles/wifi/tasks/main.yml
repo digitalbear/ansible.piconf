@@ -1,6 +1,4 @@
 ---
-- include_vars: secrets.yml
-
 - name: configure wifi for home network
   blockinfile:
     path: /etc/wpa_supplicant/wpa_supplicant.conf
