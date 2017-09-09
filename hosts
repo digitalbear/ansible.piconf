@@ -1,3 +1,2 @@
 [pi]
-#192.168.0.13  ansible_user=pi ansible_become=yes
-192.168.0.13  ansible_user=pi ansible_become=yes ansible_ssh_private_key_file=~/.ssh/id_rsa
+192.168.0.4  ansible_user=pi ansible_become=yes ansible_ssh_private_key_file=~/.ssh/id_rsa

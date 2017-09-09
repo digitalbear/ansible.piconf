@@ -1,0 +1,9 @@
+---
+- name: disable password access
+  replace:
+    path: /etc/ssh/sshd_config
+    regexp: '^#?\s?PasswordAuthentication\s*(\byes\b|\bno\b)'
+    replace: 'PasswordAuthentication no'
+    backup: yes
+  notify:
+    - restart ssh
