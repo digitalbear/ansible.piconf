@@ -96,3 +96,13 @@ If, for some reason you cannot access the Pi remotely over ethernet (network cab
 
 Make note of the **new IP Address** - this will usually be different to the one you obtained over the network cable since these use different network interface adapters (e.g. eth0/wlan0)
 
+## Configure VNC
+
+If you download the full Raspbian image (not Rasbian Lite) and plan to connect to your Raspberry Pi desktop remotely you will need to ensure VNC installed and enabled on your Pi.  Use the VNC playbook to do this:
+```
+ansible-playbook -i hosts vnc.yml
+```
+
+You will also need to download and install a VNC viewer on your local machine in order to connect.  Check out the following links for more details: 
+* <https://www.realvnc.com/en/connect/download/vnc/>
+* <https://www.raspberrypi.org/documentation/remote-access/vnc/>

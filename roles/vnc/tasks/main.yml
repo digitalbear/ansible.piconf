@@ -1,0 +1,17 @@
+---
+- name: update all packages
+  apt:
+    update_cache: yes
+    upgrade: dist
+
+- name: install Real VNC server
+  apt:
+    name: realvnc-vnc-server
+
+- name: install Real VNC viewer
+  apt:
+    name: realvnc-vnc-viewer
+
+- name: enable VNC
+  command: sudo raspi-config nonint do_vnc 0
+
