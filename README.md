@@ -69,7 +69,7 @@ ansible-playbook -i hosts ssh.yml
 
 Execute the following playbook to disable password access:
 ```
-ansible-playbook -i hosts ssh-only.yml
+ansible-playbook -i hosts disable-passwd.yml
 ```
 
 ## Configure Wifi
